@@ -12,9 +12,10 @@
 
     docker-compose up
     
- O docker cria o container da aplicação e do banco. Utilizando o docker-compose já cria todos os containers necessários.
+A aplicação está dockerizada. Basta usar o comando acima para subir os containers necessários.
 
-### API Documentation
-Após inciar o projeto, a documentação se encontra no link:
+### Documentação
+A documentação foi feita com swagger. 
+Após inciar o projeto, acessar o link:
 
 * http://localhost:8080/swagger-ui.html
