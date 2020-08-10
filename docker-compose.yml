@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  xyinc-api:
+    container_name: xyinc-java
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - xyinc-db-mongo
+    ports:
+    - "8080:8080"
+    environment:
+      - DB_URL=xyinc-db-mongo
+
+  xyinc-db-mongo:
+    container_name: xyinc-db-mongo
+    image: mongo:4
+    ports:
+      - "27017:27017"

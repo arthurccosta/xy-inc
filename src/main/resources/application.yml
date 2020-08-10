@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: xyinc
+  data:
+    mongodb:
+      host: ${DB_URL:localhost}
+      port: 27017
+      database: order
+      repositories:
+        type: auto
